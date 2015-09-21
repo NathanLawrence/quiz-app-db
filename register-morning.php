@@ -11,11 +11,13 @@
 </head>
 <body>
 	<form>
-		<input type="text" name="firstname">
-		<input type="text" name="lastname">
-		<input type="email" name="email">
-		<input type="number" name="right">
-		<input type="submit" name="submit">
+		<ul class="form-list">
+			<li><input type="text" name="firstname"></li>
+			<li><input type="text" name="lastname"></li>
+			<li><input type="email" name="email"></li>
+			<li><input type="number" name="right"></li>
+			<li><input type="submit" name="submit"></li>
+		</ul>
 	</form>
 </body>
 </html>
