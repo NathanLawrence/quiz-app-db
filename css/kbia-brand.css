@@ -1,8 +1,9 @@
 #kbiaHeader{
 	background-color:#006af3;
-	height:3em;
+	height:4em;
 }
 #kbiaHeader img{
 	max-height:80%;
-	padding:auto;
+	padding-top:10%;
+	padding-bottom:10%;
 }
