@@ -10,14 +10,16 @@
 	<title>Register for the Morning Edition News Quiz Contest</title>
 </head>
 <body>
-	<form>
-		<ul class="form-list">
-			<li><input type="text" name="firstname"></li>
-			<li><input type="text" name="lastname"></li>
-			<li><input type="email" name="email"></li>
-			<li><input type="number" name="right"></li>
-			<li><input type="submit" name="submit"></li>
-		</ul>
-	</form>
+	<div class="responsiveBody">
+		<form>
+			<ul class="form-list">
+				<li><input type="text" name="firstname"></li>
+				<li><input type="text" name="lastname"></li>
+				<li><input type="email" name="email"></li>
+				<li><input type="number" name="right"></li>
+				<li><input type="submit" name="submit"></li>
+			</ul>
+		</form>
+	</div>
 </body>
 </html>
