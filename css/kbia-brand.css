@@ -6,6 +6,7 @@
 	padding-bottom:1em;
 }
 #kbiaHeader img{
-	max-height:80%;
-	max-width:80%;
+	max-height:90%;
+	max-width:90%;
+	vertical-align:middle;
 }
