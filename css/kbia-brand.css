@@ -3,7 +3,6 @@
 	height:3em;
 }
 #kbiaHeader img{
-	max-height:100%;
-	padding-left:auto;
-	padding-right:auto;
+	max-height:80%;
+	padding:auto;
 }
