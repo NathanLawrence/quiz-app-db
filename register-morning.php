@@ -15,10 +15,10 @@
 		<h1>Register for the Morning Edition Quiz Giveaway</h1>
 		<form>
 			<ul class="form-list">
-				<li><input type="text" name="firstname"></li>
-				<li><input type="text" name="lastname"></li>
-				<li><input type="email" name="email"></li>
-				<li><input type="number" name="right"></li>
+				<li><p>First Name:</p><input type="text" name="firstname"></li>
+				<li><p>Last Name:</p><input type="text" name="lastname"></li>
+				<li><p>Email:</p><input type="email" name="email"></li>
+				<li><p>Number Correct</p><input type="number" name="right" value="<?php echo $_GET["right"]; ?>"></li>
 				<li><input type="submit" name="submit"></li>
 			</ul>
 		</form>
