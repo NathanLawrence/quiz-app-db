@@ -10,6 +10,6 @@
 	<title>Retrieve Data for the Morning Edition News Quiz</title>
 </head>
 <body>
-
+	
 </body>
 </html>

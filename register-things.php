@@ -10,6 +10,10 @@
 	<title>Register for the Morning Edition News Quiz Contest</title>
 </head>
 <body>
-
+		<input type="text" name="firstname">
+		<input type="text" name="lastname">
+		<input type="email" name="email">
+		<input type="number" name="right">
+		<input type="submit" name="submit">
 </body>
 </html>
