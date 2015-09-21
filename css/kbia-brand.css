@@ -1,6 +1,9 @@
 #kbiaHeader{
 	background-color:#006af3;
 	height:4em;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
 }
 #kbiaHeader img{
 	max-height:80%;
