@@ -10,6 +10,18 @@
 	<title>Retrieve Data for the Morning Edition News Quiz</title>
 </head>
 <body>
-	
+	<?php 
+
+	//Open the database. You will need to provide this file yourself. Please provide a MySQLi connection named "$conn"
+	require "opendb-things.php";
+
+	//Echo a complete list of all database items
+	$sql = "SHOW COLUMNS FROM entries";
+	$result = mysqli_query($conn,$sql);
+	while($row = mysqli_fetch_array($result)){
+		echo $row['Field']."<br>";
+	}
+
+	 ?>
 </body>
 </html>
