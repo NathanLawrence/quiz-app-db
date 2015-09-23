@@ -14,7 +14,7 @@
 		<?php 
 
 			//Open the database. You will need to provide this file yourself. 
-			require "opendb-morning.php"
+			require "opendb-morning.php";
 
 			//Get the data from the form and dump it into easier to use variables.
 			$firstname = $_POST["firstname"];
