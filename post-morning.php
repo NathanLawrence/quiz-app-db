@@ -34,7 +34,7 @@
 				echo "<h1>Thanks for registering.</h1>";
 			}
 			else{
-				echo "Error" . $cmd . "<br>" . $conn->error;
+				echo "<h1>Error</h1><br>" . "<pre>{$cmd}</pre>" . "<br>" . $conn->error;
 			}
 
 
