@@ -16,11 +16,19 @@
 	require "opendb-morning.php";
 
 	//Echo a complete list of all database items
-	$sql = "SELECT * FROM entries";
-	$result = mysqli_query($conn,$sql);
-	while($row = mysqli_fetch_array($result)){
-		echo $row['Field']."<br>";
+	$sql = "SELECT id, firstname, lastname, email, numright FROM entries";
+	$result = $conn->query($sql);
+
+	if ($result->num_rows > 0) {
+	    // output data of each row
+	    while($row = $result->fetch_assoc()) {
+	        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. . " - Email: " . $row["email"] . " - Score:" . $row["numright"] . "<br>";
+	    }
+	} 
+	else {
+	    echo "0 results";
 	}
+	$conn->close();
 
 	 ?>
 </body>
