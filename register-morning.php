@@ -18,7 +18,7 @@
 				<li><p>First Name:</p><input type="text" name="firstname"></li>
 				<li><p>Last Name:</p><input type="text" name="lastname"></li>
 				<li><p>Email:</p><input type="email" name="email"></li>
-				<li><p>Number Correct:</p><input type="number" name="right" value="<?php echo $_GET["right"]; ?>" disabled></li>
+				<li><p>Number Correct:</p><input type="hidden" name="right" value="<?php echo $_GET["right"]; ?>"></li>
 				<li><input type="submit" name="submit"></li>
 			</ul>
 		</form>
