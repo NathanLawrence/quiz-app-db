@@ -22,6 +22,11 @@
 			$email = $_POST["email"];
 			$right = $_POST["right"];
 
+			echo $firstname;
+			echo $lastname;
+			echo $email;
+			echo $right;
+
 			//Form the MySQL command
 			/*$cmd = "INSERT into entries (someting needs to go here)
 			VALUES ({$firstname},{$lastname},{$email},{$right})";*/
