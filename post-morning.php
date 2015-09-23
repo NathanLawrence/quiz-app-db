@@ -14,13 +14,17 @@
 		<?php 
 
 			//Open the database. You will need to provide this file yourself. 
-			require("opendb-morning.php")
+
 
 			//Get the data from the form and dump it into easier to use variables.
 			$firstname = $_POST["firstname"];
 			$lastname = $_POST["lastname"];
 			$email = $_POST["email"];
 			$right = $_POST["right"];
+
+			//Form the MySQL command
+			/*$cmd = "INSERT into entries (someting needs to go here)
+			VALUES ({$firstname},{$lastname},{$email},{$right})";*/
 
 		 ?>
 		<h1>Thanks for registering.</h1>
