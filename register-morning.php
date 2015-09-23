@@ -13,7 +13,7 @@
 	<div class="responsiveBody">
 		<!--<div id="kbiaHeader"><img src="http://media.kbia.org.s3.amazonaws.com/evergreen/KBIA_main_reverse.png"></div>-->
 		<h1>Register for the Morning Edition Quiz Giveaway</h1>
-		<form>
+		<form action="post-morning.php" method="post">
 			<ul class="form-list">
 				<li><p>First Name:</p><input type="text" name="firstname"></li>
 				<li><p>Last Name:</p><input type="text" name="lastname"></li>

@@ -17,10 +17,10 @@
 			require("opendb-morning.php")
 
 			//Get the data from the form and dump it into easier to use variables.
-			$firstname = $_GET["firstname"];
-			$lastname = $_GET["lastname"];
-			$email = $_GET["email"];
-			$right = $_GET["right"];
+			$firstname = $_POST["firstname"];
+			$lastname = $_POST["lastname"];
+			$email = $_POST["email"];
+			$right = $_POST["right"];
 
 		 ?>
 		<h1>Thanks for registering.</h1>
