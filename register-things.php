@@ -11,12 +11,13 @@
 </head>
 <body>
 	<div class="responsiveBody">
+		<!--<div id="kbiaHeader"><img src="http://media.kbia.org.s3.amazonaws.com/evergreen/KBIA_main_reverse.png"></div>-->
 		<form>
 			<ul class="form-list">
-				<li><input type="text" name="firstname"></li>
-				<li><input type="text" name="lastname"></li>
-				<li><input type="email" name="email"></li>
-				<li><input type="number" name="right"></li>
+				<li><p>First Name:</p><input type="text" name="firstname"></li>
+				<li><p>Last Name:</p><input type="text" name="lastname"></li>
+				<li><p>Email:</p><input type="email" name="email"></li>
+				<li><p>Number Correct:</p><input type="number" name="right" value="<?php echo $_GET["right"]; ?>" disabled></li>
 				<li><input type="submit" name="submit"></li>
 			</ul>
 		</form>

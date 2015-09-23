@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="responsiveBody">
-		<div id="kbiaHeader"><img src="http://media.kbia.org.s3.amazonaws.com/evergreen/KBIA_main_reverse.png"></div>
+		<!--<div id="kbiaHeader"><img src="http://media.kbia.org.s3.amazonaws.com/evergreen/KBIA_main_reverse.png"></div>-->
 		<h1>Register for the Morning Edition Quiz Giveaway</h1>
 		<form>
 			<ul class="form-list">
