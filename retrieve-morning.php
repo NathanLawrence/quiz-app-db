@@ -13,7 +13,7 @@
 	<?php 
 
 	//Open the database. You will need to provide this file yourself. Please provide a MySQLi connection named "$conn"
-	require "opendb-things.php";
+	require "opendb-morning.php";
 
 	//Echo a complete list of all database items
 	$sql = "SHOW COLUMNS FROM entries";
