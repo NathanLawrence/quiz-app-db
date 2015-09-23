@@ -12,6 +12,7 @@
 <body>
 	<div class="responsiveBody">
 		<!--<div id="kbiaHeader"><img src="http://media.kbia.org.s3.amazonaws.com/evergreen/KBIA_main_reverse.png"></div>-->
+		<h1>Register for the All Things Considered Quiz Giveaway</h1>
 		<form>
 			<ul class="form-list">
 				<li><p>First Name:</p><input type="text" name="firstname"></li>
