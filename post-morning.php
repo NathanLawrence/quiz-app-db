@@ -24,7 +24,7 @@
 
 			//Form the MySQL command
 			echo "Writing the command<br>";
-			$cmd = "INSERT into entries (firstname,lastname,email,right)
+			$cmd = "INSERT INTO entries (firstname,lastname,email,right)
 			VALUES ({$firstname},{$lastname},{$email},{$right})";
 
 
@@ -36,6 +36,9 @@
 			else{
 				echo "<h1>Error</h1><br>" . "<pre>{$cmd}</pre>" . "<br>" . $conn->error;
 			}
+
+			//Close the database.
+			$conn -> close();
 
 
 		 ?>
