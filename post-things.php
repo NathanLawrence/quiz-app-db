@@ -23,13 +23,11 @@
 			$right = $_POST["right"];
 
 			//Form the MySQL command
-			echo "Writing the command<br>";
 			$cmd = "INSERT INTO entries (firstname,lastname,email,numright)
 			VALUES ('{$firstname}','{$lastname}','{$email}','{$right}');";
 
 
 			//Send the MySQL command
-			echo "Sending the command<br>";
 			if ( $conn -> query($cmd) === true ) {
 				echo "<h1>Thanks for registering.</h1>";
 			}
