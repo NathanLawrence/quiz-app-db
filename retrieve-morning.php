@@ -16,13 +16,13 @@
 	require "opendb-morning.php";
 
 	//Echo a complete list of all database items
-	$sql = "SELECT id, firstname, lastname, email, numright FROM entries";
-	$result = $conn->query($sql);
+	$cmd = "SELECT * FROM entries";
+	$result = $conn -> query($cmd);
 
 	if ($result->num_rows > 0) {
 	    // output data of each row
 	    while($row = $result->fetch_assoc()) {
-	        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. . " - Email: " . $row["email"] . " - Score:" . $row["numright"] . "<br>";
+	        echo "Name: " . $row["firstname"]. " " . $row["lastname"]. . " - Email: " . $row["email"] . " - Score:" . $row["numright"] . "<br>";
 	    }
 	} 
 	else {
