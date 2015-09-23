@@ -16,7 +16,7 @@
 	require "opendb-morning.php";
 
 	//Echo a complete list of all database items
-	$sql = "SHOW COLUMNS FROM entries";
+	$sql = "SELECT * FROM entries";
 	$result = mysqli_query($conn,$sql);
 	while($row = mysqli_fetch_array($result)){
 		echo $row['Field']."<br>";
