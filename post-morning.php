@@ -26,6 +26,7 @@
 			echo $lastname;
 			echo $email;
 			echo $right;
+			echo isset($conn);
 
 			//Form the MySQL command
 			/*$cmd = "INSERT into entries (someting needs to go here)
