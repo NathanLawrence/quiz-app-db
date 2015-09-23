@@ -13,7 +13,7 @@
 	<div class="responsiveBody">
 		<?php 
 
-			//Open the database. You will need to provide this file yourself. 
+			//Open the database. You will need to provide this file yourself. Please provide a MySQLi connection named "$conn"
 			require "opendb-morning.php";
 
 			//Get the data from the form and dump it into easier to use variables.
@@ -22,23 +22,24 @@
 			$email = $_POST["email"];
 			$right = $_POST["right"];
 
-			echo $firstname;
-			echo $lastname;
-			echo $email;
-			echo $right;
-			if(isset($conn)){
-				echo "yay";
+			//Form the MySQL command
+			echo "Writing the command<br>";
+			$cmd = "INSERT into entries (firstname,lastname,email,right)
+			VALUES ({$firstname},{$lastname},{$email},{$right})";
+
+
+			//Send the MySQL command
+			echo "Sending the command<br>";
+			if ( $conn -> query($cmd) === true ) {
+				echo "<h1>Thanks for registering.</h1>";
 			}
 			else{
-				echo "boo";
+				echo "Error" . $cmd . "<br>" . $conn->error;
 			}
 
-			//Form the MySQL command
-			/*$cmd = "INSERT into entries (someting needs to go here)
-			VALUES ({$firstname},{$lastname},{$email},{$right})";*/
 
 		 ?>
-		<h1>Thanks for registering.</h1>
+
 	</div>
 </body>
 </html>
