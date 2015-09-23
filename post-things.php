@@ -14,7 +14,7 @@
 		<?php 
 
 			//Open the database. You will need to provide this file yourself. 
-			include("opendb-things.php")
+			require("opendb-things.php")
 
 			//Get the data from the form and dump it into easier to use variables.
 			$firstname = $_GET["firstname"];
