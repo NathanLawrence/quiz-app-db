@@ -24,8 +24,8 @@
 
 			//Form the MySQL command
 			echo "Writing the command<br>";
-			$cmd = "INSERT INTO entries (firstname,lastname,email,right)
-			VALUES ('{$firstname}','{$lastname}','{$email}','{$right}')";
+			$cmd = "INSERT INTO entries (firstname,lastname,email,numright)
+			VALUES ('{$firstname}','{$lastname}','{$email}','{$right}');";
 
 
 			//Send the MySQL command
