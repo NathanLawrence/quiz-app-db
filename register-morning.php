@@ -17,7 +17,7 @@
 		<h1>Register for the Morning Edition Quiz Giveaway</h1>
 		<form action="post-morning.php" method="post">
 			<ul class="form-list">
-				<li><p>First Name:</p><input type="text" class="form-control" name="firstname"></li>
+				<li><div class="form-group"><label for="firstname">First Name:</label><input type="text" class="form-control" name="firstname"></div></li>
 				<li><p>Last Name:</p><input type="text" class="form-control" name="lastname"></li>
 				<li><p>Email:</p><input type="email" class="form-control" name="email"></li>
 				<!--This next one is kinda neato. I can pass the number of questions gotten right (submitted in JS by a get on the previous page) through to the post page.-->
