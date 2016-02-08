@@ -22,7 +22,7 @@
 				<li><p>Email:</p><input type="email" class="form-control" name="email"></li>
 				<!--This next one is kinda neato. I can pass the number of questions gotten right (submitted in JS by a get on the previous page) through to the post page.-->
 				<li><input type="hidden" name="right" value="<?php echo $_GET["right"]; ?>"></li>
-				<li><input type="submit" class="btn btn-default btn-lg" name="submit"></li>
+				<li><div class="input-group"><input type="submit" class="btn btn-default btn-lg" name="submit"></div></li>
 			</ul>
 		</form>
 	</div>
